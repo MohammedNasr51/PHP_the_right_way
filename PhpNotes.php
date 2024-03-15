@@ -7,9 +7,9 @@
 
 echo "hellow world";
 
-echo "<h1>hellow world</h1>";
+echo "<h1>hello world</h1>";
 
-//this language is non case sinsitive 
+//this language is non case sensitive
 
 //Type Juggling And Automatic Type Conversion
 
@@ -344,7 +344,7 @@ echo "<br>";
 echo "<br>";
 #================================================================
 //Constants => it's value can't be changed during 
-//excution and it is always UPPERCASE
+//execution and it is always UPPERCASE
 define("DB_NAME", "ELzero");
 define("MAIN_NUMBER", 5);
 echo DB_NAME;
@@ -407,8 +407,8 @@ echo "<br>";
 echo "<br>";
 #============================================================================================
 //Operators 
-/*Identity => +$a ==> convert thre srtring +"100" to integer
-  Negation => -$a ==> convert thre srtring -"100" to integer but oboses the bolarity of it to -100 */
+/*Identity => +$a ==> convert the string +"100" to integer
+  Negation => -$a ==> convert the string -"100" to integer but oboses the bolarity of it to -100 */
 echo "100";
 echo "<br>";
 echo gettype("100");
@@ -425,15 +425,15 @@ echo -"-100";
 echo "<br>";
 echo gettype(-"-100");
 echo "<br>";
-echo 2 ** 3; //exponintiation
+echo 2 ** 3; //exponentiation
 echo "<br>";
 echo "<br>";
 #=====================================================
 //Comparison operators 
-/*  - ==    => Equal  --comparese only the value
+/*  - ==    => Equal  --compares only the value
     - !=    => Not Equal
     - <>    => Not Equal
-    - ===   => Identical  --comparese the value and the type 
+    - ===   => Identical  --compares the value and the type
     - !==   => Not Identical */
 // Test Equal
 var_dump(100 == 100);
@@ -475,7 +475,7 @@ var_dump(100 <=> 100);
 echo "<br>";
 echo "<br>";
 #==========================================================================
-//Increment and Decriment operator
+//Increment and Decrement operator
 $first = 0;
 echo $first;
 echo '<br>';
@@ -538,7 +538,7 @@ $arr2 = ["c" => 3, "d" => 4];
 echo '<pre>';
 print_r($arr1 + $arr2);
 echo '</pre>';
-var_dump($arr1 == $arr3); //althow 1 is int and '1' is string
+var_dump($arr1 == $arr3); //although 1 is int and '1' is string
 echo '<br>';
 var_dump($arr1 === $arr4);
 echo '<br>';
@@ -564,7 +564,7 @@ echo '<br>';
 $a = 10;
 $b = @$a or die("Variable Not Found"); //it's prevent showing the error and
 // die => give the ability to write 
-//a masage instead of the error 
+//a message instead of the error
 echo "Test $b";
 echo '<br>';
 
@@ -677,7 +677,7 @@ block of code ;
 increment or decrement i++ || i-- ; "the counter"
 }while(condition)
 
-The only difference between them that dowhile will execute the first iteration then check the condetion
+The only difference between them that do while will execute the first iteration then check the condetion
 */
 
 #==============================================================
@@ -696,7 +696,7 @@ echo '<br>';
   if i have an array i can use foreach 
 
   1-  foreach(element as values){
-        echo valuese . "<br>";
+        echo values . "<br>";
   }
 
   2-  foreach(element as key => value) :       
@@ -748,7 +748,7 @@ $f = 20;
 # require("test.text"); // gives me Fatal error and skip all other script because the file is required
 
 include_once("test.php"); // $a = 10;  gives me warning but continue the script 
-// include_once => chick that if i includes this file befor it dosen't inclede it again 
+// include_once => chick that if i include this file before it doesn't include it again
 
 echo $f . '<br>';
 
@@ -776,7 +776,7 @@ put " : " and then type the value
 
 */
 
-function get_data($country = "Private Country", $name = "Private", $age = "Private", $address = "Private Address")
+function get_data($country = "Private Country", $name = "Private", $age = "Private", $address = "Private Address"):string
 {
   // if ($address === "") {
   //   $address = "Private Address";
